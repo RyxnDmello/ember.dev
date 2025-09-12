@@ -1,43 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
-::selection {
-  background: transparent;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-
-  .title-fade {
-    background: -webkit-linear-gradient(#fff, #ffffff50);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-
-  .title-flame {
-    background: linear-gradient(to bottom, #ff6a00, #e66f00, #910303);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--poppins), Arial, Helvetica, sans-serif;
+  font-family: var(--geist), Arial, Helvetica, sans-serif;
+}
+
+.font-geist {
+  font-family: var(--geist), Arial, Helvetica, sans-serif;
+}
+
+.font-orbitron {
+  font-family: var(--orbitron), Arial, Helvetica, sans-serif;
+}
+
+.font-urbanist {
+  font-family: var(--urbanist), Arial, Helvetica, sans-serif;
 }

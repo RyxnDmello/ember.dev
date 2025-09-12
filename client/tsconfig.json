@@ -16,13 +16,14 @@
     "plugins": [{ "name": "next" }],
     "moduleResolution": "bundler",
     "module": "esnext",
-    "target": "ES2022",
+    "target": "es2024",
     "jsx": "preserve",
 
     "paths": {
       "@components/*": ["./components/*"],
       "@interfaces/*": ["./interfaces/*"],
       "@contexts/*": ["./contexts/*"],
+      "@global/*": ["./global/*"],
       "@utils/*": ["./utils/*"],
       "@hooks/*": ["./hooks/*"],
       "@/*": ["./*"]

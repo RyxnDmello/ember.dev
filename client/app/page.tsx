@@ -1,13 +1,9 @@
-import Header from "@components/Header";
-import Features from "@components/Features";
-import Tools from "@components/Tools";
+import Navbar from "@components/Common/Navbar";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <Features />
-      <Tools />
-    </div>
+    <main>
+      <Navbar />
+    </main>
   );
 }
