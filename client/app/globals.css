@@ -3,6 +3,9 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ededed;
+
+  --gradient-faded: -webkit-linear-gradient(-90deg, #ffffff, #ffffff50);
+  --gradient-flame: -webkit-linear-gradient(-90deg, #ff6a00, #ff0000);
 }
 
 @theme inline {
@@ -17,9 +20,9 @@ html {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: var(--geist), Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
 }
 
 .font-geist {
@@ -32,4 +35,18 @@ body {
 
 .font-urbanist {
   font-family: var(--urbanist), Arial, Helvetica, sans-serif;
+}
+
+.text-gradient-faded {
+  -webkit-text-fill-color: transparent;
+  background: var(--gradient-faded);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-gradient-flame {
+  -webkit-text-fill-color: transparent;
+  background: var(--gradient-flame);
+  -webkit-background-clip: text;
+  background-clip: text;
 }

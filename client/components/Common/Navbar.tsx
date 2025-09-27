@@ -3,24 +3,22 @@ import NavbarLink from "./Navbar/NavbarLink";
 import NavbarButton from "./Navbar/NavbarButton";
 import NavbarSearch from "./Navbar/NavbarSearch";
 
-interface NavbarProps {
-  onTerminal: () => void;
-}
-
-export default function Navbar({ onTerminal }: NavbarProps) {
+export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between border-b border-b-white/5 p-4">
-      <NavbarLogo />
+    <nav className="bg-background fixed top-0 z-[100] flex w-full items-center justify-between overflow-hidden border-b border-b-white/5 p-4">
+      <div className="flex items-center justify-center gap-10">
+        <NavbarLogo />
 
-      <div className="flex items-center justify-center gap-5">
-        <NavbarLink href="/" label="Tools" />
-        <NavbarLink href="/" label="Features" />
-        <NavbarLink href="/" label="Development" />
-        <NavbarLink href="/" label="Contributions" />
+        <div className="flex items-center justify-center gap-5">
+          <NavbarLink href="/" label="Tools" />
+          <NavbarLink href="/" label="Features" />
+          <NavbarLink href="/" label="Development" />
+          <NavbarLink href="/" label="Contributions" />
+        </div>
       </div>
 
       <div className="flex items-center justify-center gap-2.5">
-        <NavbarSearch label="Open Terminal" shortcut="~" onClick={onTerminal} />
+        <NavbarSearch href="/" label="Open Terminal" shortcut="~" />
         <NavbarButton href="/" label="GITHUB" />
       </div>
     </nav>
