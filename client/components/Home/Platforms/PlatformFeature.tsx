@@ -15,7 +15,7 @@ export default function PlatformFeature({
 }: PlatformFeatureProps) {
   return (
     <div
-      className={`${className} grid w-[500px] grid-cols-1 items-center justify-start gap-4 bg-[#0e0e0e] p-10 px-8`}
+      className={`${className} grid grid-cols-1 items-center justify-start gap-4 bg-[#0e0e0e] p-10 px-8`}
     >
       <Icon className="h-6 w-6 text-[#e7c59a]" />
 

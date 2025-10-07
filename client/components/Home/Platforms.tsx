@@ -9,14 +9,18 @@ import {
   FlaskConical,
 } from "lucide-react";
 
-import PlatformHeader from "./Platform/PlatformHeader";
-import PlatformFeature from "./Platform/PlatformFeature";
+import Blaze from "./Platforms/Blaze";
+import Flame from "./Platforms/Flame";
+import PlatformHeader from "./Platforms/PlatformHeader";
+import PlatformFeature from "./Platforms/PlatformFeature";
 
-export default function Platform() {
+export default function Platforms() {
   return (
     <section className="grid grid-cols-1 items-center justify-stretch gap-16 py-20">
-      <div className="mx-auto grid w-[1000px] grid-cols-1 items-center justify-center gap-5">
+      <div className="mx-auto grid w-[1000px] grid-cols-1 items-center justify-center gap-10">
         <PlatformHeader title="Build. Commit. Ship." command="run blaze" />
+
+        <Blaze />
 
         <div className="relative grid grid-cols-2 place-items-center items-center justify-center justify-items-center">
           <PlatformFeature
@@ -47,15 +51,18 @@ export default function Platform() {
             description="A powerful in-editor command line lets you run tasks, initialize projects, and stay focused."
           />
 
-          <div className="absolute left-0 h-full w-[2px] bg-gradient-to-b from-transparent via-white/15 to-transparent" />
-          <div className="absolute right-0 h-full w-[2px] bg-gradient-to-b from-transparent via-white/15 to-transparent" />
-          <div className="absolute top-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-          <div className="absolute bottom-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+          <div className="absolute left-0 h-full w-[2px] bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+          <div className="absolute h-full w-[2px] bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+          <div className="absolute right-0 h-full w-[2px] bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+          <div className="absolute top-0 h-[2px] w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+          <div className="absolute bottom-0 h-[2px] w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         </div>
       </div>
 
-      <div className="mx-auto grid w-[1000px] grid-cols-1 items-center justify-center gap-5">
+      <div className="mx-auto grid w-[1000px] grid-cols-1 items-center justify-center gap-10">
         <PlatformHeader title="Fast. Precise. Reliable." command="run flame" />
+
+        <Flame />
 
         <div className="relative grid grid-cols-2 place-items-center items-center justify-center justify-items-center">
           <PlatformFeature
@@ -86,10 +93,11 @@ export default function Platform() {
             description="Handle every aspect of your API requests, from authentication to parameters, ensuring full control."
           />
 
-          <div className="absolute left-0 h-full w-[2px] bg-gradient-to-b from-transparent via-white/15 to-transparent" />
-          <div className="absolute right-0 h-full w-[2px] bg-gradient-to-b from-transparent via-white/15 to-transparent" />
-          <div className="absolute top-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-          <div className="absolute bottom-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+          <div className="absolute left-0 h-full w-[2px] bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+          <div className="absolute h-full w-[2px] bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+          <div className="absolute right-0 h-full w-[2px] bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+          <div className="absolute top-0 h-[2px] w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+          <div className="absolute bottom-0 h-[2px] w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         </div>
       </div>
     </section>
